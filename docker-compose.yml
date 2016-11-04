@@ -6,8 +6,6 @@ services:
         image: puffinrocks/ghost
         ports: 
             - 2368
-        volumes: 
-            - main_data:/var/lib/ghost
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=2368
@@ -15,6 +13,11 @@ services:
             - front
             - back
             - default
+        volumes: 
+            - main_data:/var/lib/ghost
+        tmpfs:
+            - /run
+            - /tmp
 
 volumes:
     main_data:
