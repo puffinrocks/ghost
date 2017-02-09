@@ -3,7 +3,7 @@ version: '2'
 services:
  
     main:
-        image: puffinrocks/ghost:0.11.4
+        image: puffinrocks/ghost:latest
         ports: 
             - 2368
         environment:
