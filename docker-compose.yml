@@ -9,6 +9,8 @@ services:
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=2368
+            - LETSENCRYPT_HOST
+            - LETSENCRYPT_TEST=true
         networks:
             - front
             - back
