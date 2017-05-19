@@ -1,10 +1,10 @@
 version: '2'
 
 services:
- 
+
     main:
         image: puffinrocks/ghost:latest
-        ports: 
+        ports:
             - 2368
         environment:
             - VIRTUAL_HOST
@@ -16,7 +16,7 @@ services:
             - front
             - back
             - default
-        volumes: 
+        volumes:
             - main_data:/var/lib/ghost
         tmpfs:
             - /run
@@ -27,7 +27,7 @@ volumes:
 
 networks:
     front:
-        external: 
+        external:
             name: "puffin_front"
     back:
         external:

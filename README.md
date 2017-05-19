@@ -3,7 +3,7 @@ _simple blogging platform for individuals_
 
 https://ghost.org/
 
-Ghost is a platform dedicated to one thing: Publishing. 
+Ghost is a platform dedicated to one thing: Publishing.
 It's beautifully designed, completely customisable and completely Open Source.
 Ghost allows you to write and publish your own blog, giving you the tools to make it easy and even fun to do.
 After starting go to /ghost to create your account.

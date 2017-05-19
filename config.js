@@ -5,7 +5,7 @@ config = {
 
     development: {
         url: 'http://' + process.env.VIRTUAL_HOST,
-        
+
         // Visit http://support.ghost.org/mail for instructions
         mail: {
             transport: 'SMTP',
@@ -14,7 +14,7 @@ config = {
                 port: 25
             },
         },
-        
+
         database: {
             client: 'sqlite3',
             connection: {
