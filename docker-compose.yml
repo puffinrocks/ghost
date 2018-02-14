@@ -17,7 +17,7 @@ services:
             - back
             - default
         volumes:
-            - main_data:/var/lib/ghost
+            - main_data:/var/lib/ghost/content
         tmpfs:
             - /run
             - /tmp

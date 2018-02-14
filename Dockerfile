@@ -2,8 +2,8 @@ FROM ghost:latest
 
 ENV VERSION=$GHOST_VERSION
 
-COPY docker-entrypoint.sh /entrypoint.sh
+COPY puffin-entrypoint.sh /
 COPY config.js $GHOST_SOURCE/
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["npm", "start"]
+ENTRYPOINT ["/puffin-entrypoint.sh"]
+CMD ["node", "current/index.js"]
